@@ -1,0 +1,4 @@
+<h1>Ingredients Index</h1>
+<% @ingredients.each_with_index do |ingredient,index| %>
+  <div id="ing_<%= index %>"><p><%= ingredient.name %>: <%= ingredient.recipe_count %></p></div>
+<% end %>

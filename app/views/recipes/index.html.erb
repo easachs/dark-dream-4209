@@ -1,0 +1,6 @@
+<h1>Recipes Index</h1>
+<% @recipes.each_with_index do |recipe,index| %>
+  <div id="recipe_<%= index %>"><h3>Name: <%= link_to "#{recipe.name}", "/recipes/#{recipe.id}" %></h3>
+  <p>Complexity: <%= recipe.complexity %></p>
+  <p>Genre: <%= recipe.genre %></p></div>
+<% end %>
